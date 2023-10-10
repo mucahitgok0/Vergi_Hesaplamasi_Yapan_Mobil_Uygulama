@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         textView4=findViewById(R.id.textView4);
     }
     public void hesapla(View view){
-        int fiyat = Integer.parseInt(editTextNumber1.getText().toString());
-        int kdv = Integer.parseInt(editTextNumber2.getText().toString());
-        int kdvlifiyat = fiyat * (100 + kdv) / 100;
+        Double fiyat = Double.parseDouble(editTextNumber1.getText().toString());
+        Double kdv = Double.parseDouble(editTextNumber2.getText().toString());
+        Double kdvlifiyat = fiyat * (100 + kdv) / 100;
         textView4.setText("Sonuç:" + kdvlifiyat);
     }
     public void sayfa2gecis(View view){

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/constrainarkaplan"
+    android:background="@drawable/walpaper"
     tools:context=".MainActivity2">
 
     <EditText
@@ -32,6 +32,7 @@
         android:layout_marginTop="25dp"
         android:text="ürünün kdv'li fiyatını giriniz"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +48,7 @@
         android:text="kdv oranını giriniz"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -62,7 +64,7 @@
         android:background="@drawable/buttoncolor"
         android:onClick="hesapla"
         android:text="Hesapla"
-        android:textSize="30sp"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
@@ -76,6 +78,7 @@
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -111,7 +114,9 @@
             android:layout_weight="1"
             android:onClick="sayfa1gecis"
             android:text="sayfa1"
-            android:textSize="30sp" />
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/screen2"
@@ -120,7 +125,9 @@
             android:layout_weight="1"
             android:onClick="sayfa2gecis"
             android:text="sayfa2"
-            android:textSize="30sp" />
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="25dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

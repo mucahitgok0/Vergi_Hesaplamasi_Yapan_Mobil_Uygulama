@@ -28,9 +28,9 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
     public void hesapla(View view){
-        int kdvlifiyat = Integer.parseInt(editTextNumber1.getText().toString());
-        int kdv = Integer.parseInt(editTextNumber2.getText().toString());
-        int kdvsizfiyat = ((kdvlifiyat*100)/(kdv+100));
+        Double kdvlifiyat = Double.parseDouble(editTextNumber1.getText().toString());
+        Double kdv = Double.parseDouble(editTextNumber2.getText().toString());
+        Double kdvsizfiyat = ((kdvlifiyat*100)/(kdv+100));
         textView4.setText("Sonuç:" + kdvsizfiyat);
     }
 
