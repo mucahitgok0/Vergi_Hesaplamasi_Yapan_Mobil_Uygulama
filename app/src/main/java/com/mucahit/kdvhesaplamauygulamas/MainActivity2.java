@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class MainActivity2 extends AppCompatActivity {
     EditText editTextNumber1;
     EditText editTextNumber2;
@@ -31,7 +33,8 @@ public class MainActivity2 extends AppCompatActivity {
         Double kdvlifiyat = Double.parseDouble(editTextNumber1.getText().toString());
         Double kdv = Double.parseDouble(editTextNumber2.getText().toString());
         Double kdvsizfiyat = ((kdvlifiyat*100)/(kdv+100));
-        textView4.setText("Sonuç:" + kdvsizfiyat);
+        DecimalFormat df = new DecimalFormat("#.##");
+        textView4.setText("Sonuç:" + df.format(kdvsizfiyat));
     }
 
 
